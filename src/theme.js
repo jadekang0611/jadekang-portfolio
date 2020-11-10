@@ -24,6 +24,10 @@ const theme = createMuiTheme({
       fontWeight: 700,
       lineHeight: 72,
       fontFamily: 'Poppins, sans-serif',
+      '@media (max-width:600px)': {
+        fontSize: 28,
+        lineHeight: 42,
+      },
     },
     body1: {
       /* This theme is for the section INTRO */
@@ -31,6 +35,10 @@ const theme = createMuiTheme({
       fontWeight: 600,
       lineHeight: 48,
       fontFamily: 'Poppins, sans-serif',
+      '@media (max-width:600px)': {
+        fontSize: 20,
+        lineHeight: 30,
+      },
     },
     body2: {
       /* This theme is for main CONTENT */
@@ -38,6 +46,10 @@ const theme = createMuiTheme({
       fontWeight: 400,
       lineHeight: 24,
       fontFamily: 'Poppins, sans-serif',
+      '@media (max-width:600px)': {
+        fontSize: 14,
+        lineHeight: 21,
+      },
     },
     subtitle1: {
       /* This theme is for the section TITLE */
@@ -45,6 +57,10 @@ const theme = createMuiTheme({
       fontWeight: 500,
       lineHeight: 30,
       fontFamily: 'Poppins, sans-serif',
+      '@media (max-width:600px)': {
+        fontSize: 16,
+        lineHeight: 24,
+      },
     },
     subtitle2: {
       /* This theme is for the NAVIGATION */
@@ -52,11 +68,27 @@ const theme = createMuiTheme({
       fontWeight: 600,
       lineHeight: 27,
       fontFamily: 'Poppins, sans-serif',
+      '@media (max-width:600px)': {
+        fontSize: 14,
+        lineHeight: 16,
+      },
     },
     button: {
       fontSize: 16,
       lineHeight: 24,
       fontFamily: 'Poppins, sans-serif',
+      '@media (max-width:600px)': {
+        fontSize: 14,
+        lineHeight: 21,
+      },
+    },
+  },
+  breakpoints: {
+    values: {
+      smartphone: 400,
+      tablet: 640,
+      laptop: 1024,
+      desktop: 1280,
     },
   },
 });
