@@ -5,6 +5,8 @@ import { MyData } from '../../data/myData';
 import LinkedIn from './linkedin.svg';
 import FooterBackground from './FooterBackground.svg';
 import CustomButton from '../Custom/CustomButton';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import AttachmentIcon from '@material-ui/icons/Attachment';
 
 const useStyles = makeStyles((theme) => ({
   footer: {
@@ -56,6 +58,18 @@ const useStyles = makeStyles((theme) => ({
       display: 'none',
     },
   },
+  addIcon: {
+    fontSize: '24px',
+    color: theme.palette.white,
+  },
+  resume: {
+    fontSize: '24px',
+    color: theme.palette.primary.main,
+    background: 'white',
+    borderRadius: '50%',
+    padding: 1,
+    transform: 'rotate(-40deg)',
+  },
 }));
 
 const ContactContent = () => {
@@ -80,18 +94,28 @@ const ContactContent = () => {
         </Typography>
         <ul className={classes.social}>
           <li className={classes.socialIcon}>
-            <a href="/">
+            <a
+              href="https://www.linkedin.com/in/jadekang/"
+              title="LinkedIn"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={LinkedIn} alt="linkedin" width="24" height="24" />
             </a>
           </li>
           <li className={classes.socialIcon}>
-            <a href="/">
-              <img src={LinkedIn} alt="linkedin" width="24" height="24" />
+            <a
+              href="https://github.com/jadekang0611"
+              title="Github"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GitHubIcon className={classes.addIcon} />
             </a>
           </li>
           <li className={classes.socialIcon}>
-            <a href="/">
-              <img src={LinkedIn} alt="linkedin" width="24" height="24" />
+            <a href="/" title="Download Resume">
+              <AttachmentIcon className={classes.resume} />
             </a>
           </li>
         </ul>
@@ -105,10 +129,15 @@ const Copyright = () => {
   return (
     <div className={classes.copyright}>
       <Typography variant="body2">
-        {'Copyright © '}
+        {'© Copyright  '}
         {new Date().getFullYear()}
-        <Link color="inherit" href="https://jadekang.me/">
-          Jade Kang.
+        <Link
+          color="inherit"
+          href="https://github.com/jadekang0611"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {' Jade Kang.'}
         </Link>{' '}
         {'All rights reserved.'}
       </Typography>
