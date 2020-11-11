@@ -79,7 +79,7 @@ const ContactContent = () => {
       <div>
         {MyData.contact.map((item, index) => {
           return (
-            <div className={classes.contact}>
+            <div className={classes.contact} key={index}>
               <Typography variant="body2" className={classes.gap}>
                 {item.type.toUpperCase()}
               </Typography>
@@ -147,20 +147,21 @@ const Copyright = () => {
 
 const Footer = () => {
   const classes = useStyles();
-  console.log(MyData);
   return (
     <div className={classes.footer}>
       <CssBaseline />
       <Grid container>
-        <Grid xs={12} md={8}>
-          <Typography variant="h1">Get In Touch</Typography>
+        <Grid item xs={12} md={8}>
+          <Typography variant="h1" component="div">
+            Get In Touch
+          </Typography>
           <ContactContent className={classes.contact} />
           <div className={classes.show}>
             <CustomButton />
           </div>
           <Copyright />
         </Grid>
-        <Grid xs={12} md={4} className={classes.buttonGrid}>
+        <Grid item xs={12} md={4} className={classes.buttonGrid}>
           <CustomButton />
         </Grid>
       </Grid>

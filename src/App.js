@@ -11,13 +11,12 @@ function App() {
       <header>
         <nav></nav>
       </header>
-      <body>
-        <Landing />
-        <Projects />
-        <footer>
-          <Footer />
-        </footer>
-      </body>
+
+      <Landing />
+      <Projects />
+      <footer>
+        <Footer />
+      </footer>
     </ThemeProvider>
   );
 }

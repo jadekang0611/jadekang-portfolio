@@ -54,14 +54,22 @@ const CustomCard = (props) => {
           />
         </CardContent>
       </Card>
-      <Typography variant="subtitle1" className={classes.name}>
+      <Typography variant="subtitle1" component="div" className={classes.name}>
         {props.name}
       </Typography>
-      <Typography variant="body2" className={classes.description}>
+      <Typography
+        variant="body2"
+        component="div"
+        className={classes.description}
+      >
         <span className={classes.category}>Role: </span>
         {props.name}
       </Typography>
-      <Typography variant="body2" className={classes.description}>
+      <Typography
+        variant="body2"
+        component="div"
+        className={classes.description}
+      >
         <span className={classes.category}>Skills: </span>
         {props.skills}
       </Typography>
