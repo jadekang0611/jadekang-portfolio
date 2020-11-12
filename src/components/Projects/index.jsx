@@ -9,6 +9,7 @@ import ProjectImg4 from '../../data/images/project4/project1.png';
 import ProjectImg5 from '../../data/images/project5/project1.png';
 import LeftButton from './LeftButton.svg';
 import RightButton from './RightButton.svg';
+import ProjectBackground from './ProjectBackground.svg';
 
 //Custom Component
 import CustomCard from '../Custom/CustomCard';
@@ -27,9 +28,11 @@ const ProjectImageGroup = [
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: theme.spacing(6, 15),
+    backgroundImage: `url(${ProjectBackground})`,
+    backgroundRepeat: 'no-repeat',
+    padding: theme.spacing(18, 15, 6, 15),
     [theme.breakpoints.between('xs', 'sm')]: {
-      padding: theme.spacing(3, 2),
+      padding: theme.spacing(6, 2, 3, 2),
     },
   },
   rectangle: {
