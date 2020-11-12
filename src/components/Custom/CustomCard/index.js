@@ -1,5 +1,11 @@
 import React from 'react';
-import { Card, CardContent, Typography } from '@material-ui/core';
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  CardActionArea,
+  Typography,
+} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -12,13 +18,22 @@ const useStyles = makeStyles((theme) => ({
     height: '320px',
     borderRadius: '10px',
     boxShadow: '0px 4px 8px rgba(8, 35, 48, 0.24)',
+
     [theme.breakpoints.between('md', 'lg')]: {
-      width: '100%',
-      height: '238px',
+      width: 'auto',
+      height: '320px',
+    },
+    [theme.breakpoints.between('sm', 'md')]: {
+      width: 'auto',
+      height: '320px',
     },
     [theme.breakpoints.between('xs', 'sm')]: {
+      width: 'auto',
+      height: '320px',
+    },
+    [theme.breakpoints.up('lg')]: {
       width: '100%',
-      height: '238px',
+      height: '320px',
     },
   },
   name: {
@@ -39,10 +54,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   projectImg: {
-    margin: '-4px -8px',
     borderRadius: '10px',
-    width: '400px',
-    height: 'auto',
+    height: 500,
   },
 }));
 
@@ -51,13 +64,9 @@ const CustomCard = (props) => {
   return (
     <div className={classes.root}>
       <Card className={classes.style} elevation={0}>
-        <CardContent className={classes.imageHolder}>
-          <img
-            src={props.image}
-            alt={props.name}
-            className={classes.projectImg}
-          />
-        </CardContent>
+        <CardActionArea>
+          <CardMedia className={classes.projectImg} image={props.image} />
+        </CardActionArea>
       </Card>
       <Typography variant="subtitle1" component="div" className={classes.name}>
         {props.name}

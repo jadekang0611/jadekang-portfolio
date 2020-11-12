@@ -65,16 +65,20 @@ const useStyles = makeStyles((theme) => ({
       width: 50,
       height: 50,
     },
+    '@media (max-width:400px) and (min-width: 200px)': {
+      width: 30,
+      height: 30,
+    },
   },
   sliderButtons: {
+    borderRadius: '50%',
+    marginBottom: 24,
+    padding: 8,
     [theme.breakpoints.between('xs', 'sm')]: {
       width: '24',
       height: 'auto',
       borderRadius: 8,
     },
-    borderRadius: '50%',
-    marginBottom: 24,
-    padding: 8,
   },
   skill: {
     marginRight: '4px',
@@ -97,11 +101,7 @@ const useStyles = makeStyles((theme) => ({
       left: 0,
       right: 0,
     },
-    '@media (min-width:601px)': {
-      bottom: '450px',
-      left: 0,
-      right: 0,
-    },
+
     '@media (min-width: 801px) and (max-width:959px)': {
       bottom: '420px',
     },
@@ -116,6 +116,15 @@ const useStyles = makeStyles((theme) => ({
     },
     '@media (min-width: 1340px) and (max-width:1440px)': {
       bottom: '420px',
+    },
+    '@media (min-width: 1441px) and (max-width:1908px)': {
+      bottom: '410px !important',
+    },
+    '@media (min-width: 1909px) and (max-width:1919px)': {
+      bottom: '410px !important',
+    },
+    '@media (min-width: 1920px) and (max-width:2400px)': {
+      bottom: '500px !important',
     },
   },
 }));
