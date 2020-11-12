@@ -91,40 +91,44 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'flex-end',
     right: 0,
-    '@media (min-width:500px)': {
-      bottom: '420px',
+    '@media (max-width:500px)': {
+      bottom: '500px',
       left: 0,
       right: 0,
     },
-    '@media (max-width:600px)': {
-      bottom: '405px',
+    '@media (max-width:600px) and (min-width: 501px)': {
+      bottom: '490px',
       left: 0,
       right: 0,
     },
-
-    '@media (min-width: 801px) and (max-width:959px)': {
-      bottom: '420px',
+    '@media (max-width:797px) and (min-width: 601px)': {
+      bottom: '540px',
+      left: 0,
+      right: 0,
+    },
+    '@media (min-width: 800px) and (max-width:959px)': {
+      bottom: '500px',
     },
     '@media (min-width: 960px) and (max-width:1005px)': {
-      bottom: '450px',
+      bottom: '525px',
     },
     '@media (min-width: 1006px) and (max-width:1024px)': {
-      bottom: '420px',
+      bottom: '500px',
     },
     '@media (min-width: 1025px) and (max-width:1340px)': {
-      bottom: '440px',
+      bottom: '520px',
     },
     '@media (min-width: 1340px) and (max-width:1440px)': {
-      bottom: '420px',
+      bottom: '500px',
     },
     '@media (min-width: 1441px) and (max-width:1908px)': {
-      bottom: '410px !important',
+      bottom: '500px',
     },
     '@media (min-width: 1909px) and (max-width:1919px)': {
-      bottom: '410px !important',
+      bottom: '500px',
     },
     '@media (min-width: 1920px) and (max-width:2400px)': {
-      bottom: '500px !important',
+      bottom: '500px',
     },
   },
 }));
