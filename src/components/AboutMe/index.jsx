@@ -18,7 +18,7 @@ import aboutMeBackground from './aboutMeBackground.svg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: theme.spacing(6, 15),
+    padding: theme.spacing(17, 15, 6, 15),
     [theme.breakpoints.between('xs', 'sm')]: {
       padding: theme.spacing(3, 2),
     },
@@ -109,7 +109,7 @@ const AboutMe = () => {
   return (
     <div className={classes.root}>
       <Grid container>
-        <Grid item xs={12} lg={6} className={classes.profileSection}>
+        <Grid item xs={12} lg={6}>
           <img
             src={aboutMeBackground}
             alt="My Profile-Two"
