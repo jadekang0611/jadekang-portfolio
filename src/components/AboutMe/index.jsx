@@ -25,12 +25,6 @@ const useStyles = makeStyles((theme) => ({
   },
 
   profile2: {
-    [theme.breakpoints.between('xs', 'sm')]: {
-      display: 'none',
-    },
-    [theme.breakpoints.up('md')]: {
-      width: 651,
-    },
     [theme.breakpoints.between('sm', 'md')]: {
       width: 651,
     },
@@ -38,6 +32,12 @@ const useStyles = makeStyles((theme) => ({
       width: 600,
       display: 'flex',
       margin: 'auto',
+    },
+    '@media (min-width: 380px) and (max-width:1281px)': {
+      display: 'none',
+    },
+    '@media (min-width: 1282px)': {
+      width: 651,
     },
   },
 
