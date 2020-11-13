@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from '@material-ui/styles';
-import Landing from './components/Landing';
+import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
 import Projects from './components/Projects';
 import theme from './theme';
@@ -12,7 +12,7 @@ function App() {
         <nav></nav>
       </header>
 
-      <Landing />
+      <AboutMe />
       <Projects />
       <footer>
         <Footer />

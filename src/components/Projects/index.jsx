@@ -56,8 +56,6 @@ const useStyles = makeStyles((theme) => ({
   },
   row: {
     display: 'flex',
-    // flexDirection: 'row',
-    // justifyContent: 'space-between',
   },
   circleButton: {
     '@media (max-width:600px) and (min-width: 500px)': {
@@ -168,7 +166,9 @@ const Projects = () => {
     <div className={classes.root}>
       <div className={classes.titleBox}>
         <div className={classes.rectangle} />
-        <Typography variant="subtitle1">Projects</Typography>
+        <Typography variant="subtitle1" color="primary">
+          Projects
+        </Typography>
       </div>
       <Grid container direction="row" justify="space-between">
         <Grid item xs={8}>
@@ -176,25 +176,7 @@ const Projects = () => {
             Projects in which I participated
           </Typography>
         </Grid>
-        <Grid item s={4}>
-          {/* <Button className={classes.sliderButtons}>
-            <img
-              src={LeftButton}
-              alt="left-button"
-              className={classes.circleButton}
-              name="prevButton"
-            />
-          </Button>
-
-          <Button className={classes.sliderButtons}>
-            <img
-              src={RightButton}
-              alt="left-button"
-              className={classes.circleButton}
-              name="nextButton"
-            />
-          </Button> */}
-        </Grid>
+        <Grid item s={4}></Grid>
       </Grid>
 
       <div className={classes.cardBox}></div>
