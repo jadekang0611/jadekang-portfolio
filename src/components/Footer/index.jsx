@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
 const ContactContent = () => {
   const classes = useStyles();
   return (
-    <div>
+    <div id="jk_contacts">
       <div>
         {MyData.contact.map((item, index) => {
           return (

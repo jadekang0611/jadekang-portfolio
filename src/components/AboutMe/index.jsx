@@ -1,7 +1,6 @@
 import React from 'react';
-import { Typography, Grid, Avatar, Chip } from '@material-ui/core';
+import { Typography, Grid, Chip } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import Placeholder from './Placeholder.svg';
 
 // Assets
 import js from './js.png';
@@ -85,9 +84,14 @@ const useStyles = makeStyles((theme) => ({
       width: 90,
     },
   },
-  chip: { margin: '16px 8px -4px 0' },
-  avatar: {
-    padding: '0.25em',
+  chip: {
+    margin: '16px 8px -4px 0',
+    boxShadow: '0px 4px 8px rgba(75, 68, 184, 0.24)',
+    borderRadius: '30px',
+    padding: '8px 16px',
+    fontSize: '16px',
+    fontWeight: 500,
+    lineHeight: '24px',
   },
 }));
 
@@ -107,7 +111,7 @@ const skillSet = [
 const AboutMe = () => {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="jk_about_me">
       <Grid container>
         <Grid item xs={12} lg={6}>
           <img
@@ -168,13 +172,6 @@ const AboutMe = () => {
               <Chip
                 className={classes.chip}
                 label={item.skill}
-                avatar={
-                  <Avatar
-                    src={item.image}
-                    alt={item.skill}
-                    className={classes.avatar}
-                  />
-                }
                 clickable
                 color="primary"
               />

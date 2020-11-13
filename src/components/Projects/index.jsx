@@ -166,7 +166,7 @@ const Projects = () => {
   };
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="jk_projects">
       <div className={classes.titleBox}>
         <div className={classes.rectangle} />
         <Typography variant="subtitle1" color="primary">

@@ -1,16 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
-import {
-  Typography,
-  Button,
-  Grid,
-  Hidden,
-  withWidth,
-  Link,
-} from '@material-ui/core';
+import { Typography, Button, Grid, Hidden, withWidth } from '@material-ui/core';
 import CustomButton from '../Custom/CustomButton';
 import Logo from './Logo.svg';
+import { Link } from 'react-scroll';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,22 +45,50 @@ const Navigation = (props) => {
       </Grid>
       <Hidden smDown>
         <Grid item xs={8} md={8} className={classes.navBox}>
-          <Link href="#jk_intro" className={classes.link}>
+          <Link
+            activeClass="active"
+            to="jkIntro"
+            className={classes.link}
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
             <Button className={classes.navItem}>
               <Typography variant="subtitle2">Intro</Typography>
             </Button>
           </Link>
-          <Link href="#jk_about_me" className={classes.link}>
+          <Link
+            to="jk_about_me"
+            className={classes.link}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
             <Button className={classes.navItem}>
               <Typography variant="subtitle2">About Me</Typography>
             </Button>
           </Link>
-          <Link href="#jk_projects" className={classes.link}>
+          <Link
+            to="jk_projects"
+            className={classes.link}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
             <Button className={classes.navItem}>
               <Typography variant="subtitle2">Projects</Typography>
             </Button>
           </Link>
-          <Link href="#jk_contacts" className={classes.link}>
+          <Link
+            to="jk_contacts"
+            className={classes.link}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
             <Button className={classes.navItem}>
               <Typography variant="subtitle2">Get In Touch</Typography>
             </Button>

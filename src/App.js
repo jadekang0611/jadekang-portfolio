@@ -11,19 +11,15 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navigation />
-      <section id="jk_intro">
-        <Intro />
-      </section>
-      <section id="jk_about_me">
-        <AboutMe />
-      </section>
-      <section id="jk_projects">
-        <Projects />
-      </section>
+
+      <Intro />
+
+      <AboutMe />
+
+      <Projects />
+
       <footer>
-        <section id="jk_contacts">
-          <Footer />
-        </section>
+        <Footer />
       </footer>
     </ThemeProvider>
   );
