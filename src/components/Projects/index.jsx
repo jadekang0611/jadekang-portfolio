@@ -12,7 +12,7 @@ import RightButton from './RightButton.svg';
 
 import BgLeft from './BgLeft.svg';
 import BgRight from './BgRight.svg';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Link } from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
 
 //Custom Component
@@ -250,13 +250,19 @@ const Projects = () => {
           return (
             <div key={item.id}>
               <Link
-                to={ROUTES.PROJECT}
+                to={{
+                  pathname: ROUTES.PROJECT + `/?id=${item.id}`,
+                  name: item.name,
+                  thumbnail: item.thumbnail,
+                  skills: item.skills,
+                  released: item.released,
+                }}
                 className={classes.link}
                 onClick={scrollHandler}
               >
                 <CustomCard
                   className={classes.card}
-                  image={ProjectImageGroup[0]}
+                  image={item.thumbnail}
                   name={item.name}
                   role={item.role}
                   skills={item.skills.map((item, index) => {

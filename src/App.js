@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from '@material-ui/styles';
 import Navigation from './components/Navigation';
 import Intro from './components/Intro';
@@ -32,14 +32,9 @@ function App() {
           />
           <Route
             path={ROUTES.PROJECT}
-            onChange={(prevState, nextState) => {
-              if (nextState.location.action !== 'POP') {
-                window.scrollTo(0, 0);
-              }
-            }}
-            component={() => (
+            render={(props) => (
               <>
-                <ProjectDetail />
+                <ProjectDetail {...props} />
                 <footer>
                   <Footer />
                 </footer>

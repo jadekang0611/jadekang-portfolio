@@ -13,7 +13,7 @@ export const MyData = {
   projects: [
     {
       id: 1,
-      name: 'Project Name 1',
+      name: 'Robin Website',
       role: 'Fullstack Engineer',
       skills: [
         { skill: 'React' },
@@ -21,12 +21,13 @@ export const MyData = {
         { skill: 'Firebase' },
         { skill: 'Material-UI' },
       ],
-      thumbnail: 'images/project1/project1.png',
-      screens: ['1', '2', '3'],
+      thumbnail:
+        'https://firebasestorage.googleapis.com/v0/b/jadekang-portfolio.appspot.com/o/robin-website-new.png?alt=media&token=ed12c95b-cea6-4d84-8b38-967d8a87705a',
+      released: 'July 21, 2020',
     },
     {
       id: 2,
-      name: 'Project Name 2',
+      name: 'Robin Application',
       role: 'Fullstack Engineer',
       skills: [
         { skill: 'React' },
@@ -34,8 +35,9 @@ export const MyData = {
         { skill: 'Firebase' },
         { skill: 'Material-UI' },
       ],
-      thumbnail: '',
-      screens: ['1', '2', '3'],
+      thumbnail:
+        'https://firebasestorage.googleapis.com/v0/b/jadekang-portfolio.appspot.com/o/Robin-applications.png?alt=media&token=ae991013-9b4a-4734-97f6-bd2b736a9ab9',
+      released: 'September 20, 2020',
     },
     {
       id: 3,
@@ -48,7 +50,7 @@ export const MyData = {
         { skill: 'Material-UI' },
       ],
       thumbnail: '',
-      screens: ['1', '2', '3'],
+      released: 'October 28, 2020',
     },
     {
       id: 4,
@@ -61,7 +63,7 @@ export const MyData = {
         { skill: 'Material-UI' },
       ],
       thumbnail: '',
-      screens: ['1', '2', '3'],
+      released: 'September 20, 2020',
     },
     {
       id: 5,
@@ -74,7 +76,7 @@ export const MyData = {
         { skill: 'Material-UI' },
       ],
       thumbnail: '',
-      screens: ['1', '2', '3'],
+      released: 'September 20, 2020',
     },
   ],
 };

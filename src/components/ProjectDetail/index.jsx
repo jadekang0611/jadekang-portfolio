@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
 
 const ProjectDetail = (props) => {
   const classes = useStyles();
-  const { post } = props;
+  console.log(props.location);
   return (
     <>
       <Grid container className={classes.mainFeaturedProject}>
@@ -86,7 +86,11 @@ const ProjectDetail = (props) => {
           </Grid>
         </Grid>
         <Grid item xs={12} className={classes.imageBox}>
-          <img src={Thumbnail} alt="Project" className={classes.image} />
+          <img
+            src={props.location.thumbnail}
+            alt="Project"
+            className={classes.image}
+          />
         </Grid>
         <Grid container direction="row" justify="space-between">
           <Grid item>
@@ -103,7 +107,7 @@ const ProjectDetail = (props) => {
       <Grid container>
         <Grid item xs={12} className={classes.contentBox}>
           <Typography variant="body1" align="center">
-            Project Name
+            {props.location.name}
           </Typography>
           <Typography variant="subtitle2" className={classes.content}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus
