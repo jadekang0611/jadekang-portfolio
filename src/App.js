@@ -32,6 +32,11 @@ function App() {
           />
           <Route
             path={ROUTES.PROJECT}
+            onChange={(prevState, nextState) => {
+              if (nextState.location.action !== 'POP') {
+                window.scrollTo(0, 0);
+              }
+            }}
             component={() => (
               <>
                 <ProjectDetail />

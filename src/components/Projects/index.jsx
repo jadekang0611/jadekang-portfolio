@@ -146,6 +146,14 @@ const useStyles = makeStyles((theme) => ({
 const Projects = () => {
   const classes = useStyles();
 
+  const scrollHandler = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  };
+
   const CustomButtonGroupAsArrows = ({ next, previous }) => {
     return (
       <div className={classes.customButtonGroup}>
@@ -241,7 +249,11 @@ const Projects = () => {
         {MyData.projects.map((item, id) => {
           return (
             <div key={item.id}>
-              <Link to={ROUTES.PROJECT} className={classes.link}>
+              <Link
+                to={ROUTES.PROJECT}
+                className={classes.link}
+                onClick={scrollHandler}
+              >
                 <CustomCard
                   className={classes.card}
                   image={ProjectImageGroup[0]}
