@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Button, Grid } from '@material-ui/core';
 import { MyData } from '../../data/myData';
@@ -9,9 +9,11 @@ import ProjectImg4 from '../../data/images/project4/project1.png';
 import ProjectImg5 from '../../data/images/project5/project1.png';
 import LeftButton from './LeftButton.svg';
 import RightButton from './RightButton.svg';
-import ProjectBackground from './ProjectBackground.svg';
+
 import BgLeft from './BgLeft.svg';
 import BgRight from './BgRight.svg';
+import { Link } from 'react-router-dom';
+import * as ROUTES from '../../constants/routes';
 
 //Custom Component
 import CustomCard from '../Custom/CustomCard';
@@ -135,6 +137,10 @@ const useStyles = makeStyles((theme) => ({
       bottom: '500px',
     },
   },
+  link: {
+    textDecoration: 'none',
+    color: 'inherit',
+  },
 }));
 
 const Projects = () => {
@@ -235,23 +241,25 @@ const Projects = () => {
         {MyData.projects.map((item, id) => {
           return (
             <div key={item.id}>
-              <CustomCard
-                className={classes.card}
-                image={ProjectImageGroup[0]}
-                name={item.name}
-                role={item.role}
-                skills={item.skills.map((item, index) => {
-                  return (
-                    <Typography
-                      variant="body2"
-                      key={index}
-                      className={classes.skill}
-                    >
-                      {item.skill + ', '}
-                    </Typography>
-                  );
-                })}
-              />
+              <Link to={ROUTES.PROJECT} className={classes.link}>
+                <CustomCard
+                  className={classes.card}
+                  image={ProjectImageGroup[0]}
+                  name={item.name}
+                  role={item.role}
+                  skills={item.skills.map((item, index) => {
+                    return (
+                      <Typography
+                        variant="body2"
+                        key={index}
+                        className={classes.skill}
+                      >
+                        {item.skill + ', '}
+                      </Typography>
+                    );
+                  })}
+                />
+              </Link>
             </div>
           );
         })}

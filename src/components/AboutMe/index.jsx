@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
       display: 'flex',
       margin: 'auto',
     },
-    '@media (min-width: 380px) and (max-width:1281px)': {
+    '@media (min-width: 380px) and (max-width:1279px)': {
       display: 'none',
     },
     '@media (min-width: 1282px)': {
@@ -93,6 +93,14 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 500,
     lineHeight: '24px',
   },
+  profileContainer: {
+    display: 'flex',
+    justifyContent: 'flex-start',
+    '@media (min-width: 1280px) and (max-width:1500px)': {
+      display: 'flex',
+      justifyContent: 'flex-end',
+    },
+  },
 }));
 
 const skillSet = [
@@ -106,6 +114,7 @@ const skillSet = [
   { skill: 'Ionic', image: `${ionic}` },
   { skill: 'Material-UI', image: `${material}` },
   { skill: 'Bootstrap', image: `${bootstrap}` },
+  { skill: 'Figma', image: `${bootstrap}` },
 ];
 
 const AboutMe = () => {
@@ -113,7 +122,7 @@ const AboutMe = () => {
   return (
     <div className={classes.root} id="jk_about_me">
       <Grid container>
-        <Grid item xs={12} lg={6}>
+        <Grid item xs={12} lg={6} className={classes.profileContainer}>
           <img
             src={aboutMeBackground}
             alt="My Profile-Two"
