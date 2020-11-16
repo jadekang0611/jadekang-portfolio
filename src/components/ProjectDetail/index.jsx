@@ -47,6 +47,9 @@ const useStyles = makeStyles((theme) => ({
   },
   contentBox: {
     padding: theme.spacing(0, 46.25),
+    [theme.breakpoints.between('sm', 'md')]: {
+      padding: theme.spacing(0, 30),
+    },
     [theme.breakpoints.between('xs', 'sm')]: {
       padding: theme.spacing(2, 2),
     },

@@ -161,7 +161,7 @@ const useStyles = makeStyles((theme) => ({
     '@media (min-width: 1628px) and (max-width:1765px)': {
       bottom: '525px',
     },
-    '@media (min-width: 1765px) and (max-width:1920px)': {
+    '@media (min-width: 1765px) and (max-width:2500px)': {
       bottom: '500px',
     },
   },
