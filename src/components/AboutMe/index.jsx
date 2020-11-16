@@ -32,7 +32,8 @@ const useStyles = makeStyles((theme) => ({
       display: 'flex',
       margin: 'auto',
     },
-    '@media (min-width: 380px) and (max-width:1279px)': {
+    '@media (min-width: 360px) and (max-width:1279px)': {
+      width: '100%',
       display: 'none',
     },
     '@media (min-width: 1282px)': {

@@ -98,43 +98,71 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'flex-end',
     right: 0,
     '@media (max-width:500px)': {
-      bottom: '500px',
+      bottom: '550px',
       left: 0,
       right: 0,
     },
-    '@media (max-width:600px) and (min-width: 501px)': {
-      bottom: '490px',
+    '@media (max-width:550px) and (min-width: 501px)': {
+      bottom: '555px',
       left: 0,
       right: 0,
     },
-    '@media (max-width:797px) and (min-width: 601px)': {
-      bottom: '540px',
+    '@media (max-width:584px) and (min-width: 551px)': {
+      bottom: '530px',
       left: 0,
       right: 0,
     },
-    '@media (min-width: 800px) and (max-width:959px)': {
-      bottom: '500px',
+    '@media (max-width:600px) and (min-width: 585px)': {
+      bottom: '510px',
+      left: 0,
+      right: 0,
+    },
+    '@media (max-width:656px) and (min-width: 601px)': {
+      bottom: '600px',
+      left: 0,
+      right: 0,
+    },
+    '@media (max-width:700px) and (min-width: 657px)': {
+      bottom: '550px',
+      left: 0,
+      right: 0,
+    },
+    '@media (max-width:799px) and (min-width: 701px)': {
+      bottom: '545px',
+      left: 0,
+      right: 0,
+    },
+    '@media (max-width:959px) and (min-width: 800px)': {
+      bottom: '545px',
+      left: 0,
+      right: 0,
     },
     '@media (min-width: 960px) and (max-width:1005px)': {
-      bottom: '525px',
+      bottom: '550px',
     },
     '@media (min-width: 1006px) and (max-width:1024px)': {
-      bottom: '500px',
+      bottom: '545px',
     },
-    '@media (min-width: 1025px) and (max-width:1340px)': {
-      bottom: '520px',
+    '@media (min-width: 1025px) and (max-width:1177px)': {
+      bottom: '600px',
+    },
+    '@media (min-width: 1178px) and (max-width:1195px)': {
+      bottom: '575px',
+    },
+    '@media (min-width: 1196px) and (max-width:1339px)': {
+      bottom: '550px',
     },
     '@media (min-width: 1340px) and (max-width:1440px)': {
-      bottom: '500px',
+      bottom: '550px',
     },
     '@media (min-width: 1441px) and (max-width:1908px)': {
-      bottom: '500px',
+      bottom: '550px',
     },
     '@media (min-width: 1909px) and (max-width:1919px)': {
-      bottom: '500px',
+      bottom: '550px',
     },
     '@media (min-width: 1920px) and (max-width:2400px)': {
-      bottom: '500px',
+      bottom: '550px',
     },
   },
   link: {
