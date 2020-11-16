@@ -43,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     textDecoration: 'none',
+    color: 'inherit',
   },
   contentBox: {
     padding: theme.spacing(0, 46.25),
@@ -81,8 +82,22 @@ const ProjectDetail = (props) => {
             </Link>
           </Grid>
           <Grid item className={classes.buttonBox}>
-            <GitHubIcon className={classes.github} />
-            <Button className={classes.liveButton}>Live Link</Button>
+            <a
+              href={props.location.github}
+              className={classes.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GitHubIcon className={classes.github} />
+            </a>
+            <a
+              href={props.location.deployed}
+              className={classes.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button className={classes.liveButton}>Live Link</Button>
+            </a>
           </Grid>
         </Grid>
         <Grid item xs={12} className={classes.imageBox}>
@@ -97,10 +112,12 @@ const ProjectDetail = (props) => {
             <Typography variant="body2">Role: Software Engineer</Typography>
           </Grid>
           <Grid item>
-            <Typography variant="body2">Skills: JavaScript, React</Typography>
+            <Typography variant="body2">
+              {'Skills: ' + props.location.skills}
+            </Typography>
           </Grid>
           <Grid item>
-            <Typography variant="body2">Date: 12.02.2020</Typography>
+            <Typography variant="body2">{props.location.released}</Typography>
           </Grid>
         </Grid>
       </Grid>

@@ -77,7 +77,7 @@ const CustomCard = (props) => {
         className={classes.description}
       >
         <span className={classes.category}>Role: </span>
-        {props.name}
+        {props.role}
       </Typography>
       <Typography
         variant="body2"

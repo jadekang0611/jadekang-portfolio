@@ -12,7 +12,7 @@ import RightButton from './RightButton.svg';
 
 import BgLeft from './BgLeft.svg';
 import BgRight from './BgRight.svg';
-import { BrowserRouter as Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
 
 //Custom Component
@@ -251,11 +251,13 @@ const Projects = () => {
             <div key={item.id}>
               <Link
                 to={{
-                  pathname: ROUTES.PROJECT + `/?id=${item.id}`,
+                  pathname: ROUTES.PROJECT + `/${item.name}`,
                   name: item.name,
                   thumbnail: item.thumbnail,
                   skills: item.skills,
                   released: item.released,
+                  github: item.github,
+                  deployed: item.deployed,
                 }}
                 className={classes.link}
                 onClick={scrollHandler}
@@ -265,17 +267,7 @@ const Projects = () => {
                   image={item.thumbnail}
                   name={item.name}
                   role={item.role}
-                  skills={item.skills.map((item, index) => {
-                    return (
-                      <Typography
-                        variant="body2"
-                        key={index}
-                        className={classes.skill}
-                      >
-                        {item.skill + ', '}
-                      </Typography>
-                    );
-                  })}
+                  skills={item.skills}
                 />
               </Link>
             </div>
