@@ -155,14 +155,14 @@ const useStyles = makeStyles((theme) => ({
     '@media (min-width: 1340px) and (max-width:1440px)': {
       bottom: '550px',
     },
-    '@media (min-width: 1441px) and (max-width:1908px)': {
+    '@media (min-width: 1441px) and (max-width:1627px)': {
       bottom: '550px',
     },
-    '@media (min-width: 1909px) and (max-width:1919px)': {
-      bottom: '550px',
+    '@media (min-width: 1628px) and (max-width:1765px)': {
+      bottom: '525px',
     },
-    '@media (min-width: 1920px) and (max-width:2400px)': {
-      bottom: '550px',
+    '@media (min-width: 1765px) and (max-width:1920px)': {
+      bottom: '500px',
     },
   },
   link: {

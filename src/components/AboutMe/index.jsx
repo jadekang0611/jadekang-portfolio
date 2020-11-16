@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
       display: 'flex',
       margin: 'auto',
     },
-    '@media (min-width: 360px) and (max-width:1279px)': {
+    '@media (min-width: 0px) and (max-width:1279px)': {
       width: '100%',
       display: 'none',
     },
@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     right: 0,
     top: '0.85em',
     zIndex: '-1',
-    '@media (min-width: 360px) and (max-width:599px)': {
+    '@media (min-width: 0px) and (max-width:599px)': {
       width: 299,
     },
   },
@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
     right: 0,
     top: '0.85em',
     zIndex: '-1',
-    '@media (min-width: 360px) and (max-width:599px)': {
+    '@media (min-width: 0px) and (max-width:599px)': {
       width: 90,
     },
   },

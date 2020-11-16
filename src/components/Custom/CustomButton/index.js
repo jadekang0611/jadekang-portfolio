@@ -1,5 +1,5 @@
-import React from 'react';
-import { Button } from '@material-ui/core';
+import React, { useState } from 'react';
+import { Button, Dialog } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -15,11 +15,50 @@ const useStyles = makeStyles((theme) => ({
     },
     padding: '10px 20px',
   },
+  calendly: {
+    '@media (min-width: 0px) and (max-width:400px)': {
+      width: '60%',
+    },
+  },
 }));
+
+const Calendly = (props) => {
+  const classes = useStyles();
+  const { onClose, open } = props;
+  return (
+    <Dialog onClose={onClose} open={open}>
+      <div style={{ width: '500px', height: '500px' }}>
+        <iframe
+          title="calendly"
+          src="https://calendly.com/j-dandyloper"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          className={classes.calendly}
+        ></iframe>
+      </div>
+    </Dialog>
+  );
+};
 
 const CustomButton = () => {
   const classes = useStyles();
-  return <Button className={classes.style}>Interview Me</Button>;
+  const [open, setOpen] = useState(false);
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (value) => {
+    setOpen(false);
+  };
+  return (
+    <>
+      <Button className={classes.style} onClick={handleClickOpen}>
+        Interview Me
+      </Button>
+      <Calendly open={open} onClose={handleClose} />
+    </>
+  );
 };
 
 export default CustomButton;

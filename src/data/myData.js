@@ -48,8 +48,7 @@ export const MyData = {
       id: 4,
       name: 'Tempture - Web Application',
       role: 'Fullstack Engineer',
-      skills:
-        'JavaScript, React, Heroku, Material-UI, Node.JS, MongoDB, JWT, Express',
+      skills: 'JS, React, Material-UI, Node.JS, MongoDB, JWT, Express',
       thumbnail:
         'https://firebasestorage.googleapis.com/v0/b/jadekang-portfolio.appspot.com/o/tempture-app.png?alt=media&token=e6f5b0c0-3fce-4f09-8335-b5e6b83ea1dd',
       released: 'November 7, 2020',
@@ -60,7 +59,7 @@ export const MyData = {
       id: 5,
       name: 'Edubloc - Mobile Application',
       role: 'Product/Project Manager',
-      skills: 'JIRA, Figma, Github, Angular, Ionic',
+      skills: 'JIRA, Agile, Scrum, Figma, Github, Angular, Ionic',
       thumbnail:
         'https://firebasestorage.googleapis.com/v0/b/jadekang-portfolio.appspot.com/o/edubloc-mobile.png?alt=media&token=b58144fe-8859-46a0-8e40-67087d839b68',
       released: 'October 15, 2020',
@@ -71,7 +70,7 @@ export const MyData = {
       id: 6,
       name: 'Edubloc - Web Application',
       role: 'Product/Project Manager',
-      skills: 'JIRA, Figma, Github, Angular, Ionic',
+      skills: 'JIRA, Agile, Scrum, Figma, Github, Angular, Ionic',
       thumbnail:
         'https://firebasestorage.googleapis.com/v0/b/jadekang-portfolio.appspot.com/o/edubloc-web-application.png?alt=media&token=df77c00f-dd4a-4989-9ecb-d88353e6c713',
       released: 'November 1, 2020',
