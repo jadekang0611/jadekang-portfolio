@@ -112,7 +112,9 @@ const ProjectDetail = (props) => {
         </Grid>
         <Grid container direction="row" justify="space-between">
           <Grid item>
-            <Typography variant="body2">Role: Software Engineer</Typography>
+            <Typography variant="body2">
+              {'Role: ' + props.location.role}
+            </Typography>
           </Grid>
           <Grid item>
             <Typography variant="body2">
@@ -130,24 +132,7 @@ const ProjectDetail = (props) => {
             {props.location.name}
           </Typography>
           <Typography variant="subtitle2" className={classes.content}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus
-            vestibulum vivamus consequat est a magna. Convallis odio accumsan eu
-            purus phasellus. Non dignissim tempus viverra at orci, viverra
-            porttitor rhoncus. Scelerisque et ipsum mi elit cras. Nam nibh
-            sapien, lorem nec vestibulum amet suspendisse magna. Leo ac quam
-            scelerisque est mauris. Erat aliquet accumsan elit egestas
-            pellentesque turpis gravida ut odio. Maecenas in quis sit risus
-            eros, viverra adipiscing nunc pulvinar. Turpis ultrices quis nam
-            purus at convallis id viverra. In ante sit felis, enim venenatis
-            aliquam adipiscing. Quis et, vitae, adipiscing enim. Interdum
-            consectetur consectetur tincidunt vitae pellentesque pellentesque et
-            varius pharetra. Ut euismod eget eleifend urna feugiat vitae fames.
-            Ultrices dictum vitae pharetra vel aliquam. Convallis augue posuere
-            montes, sed neque, enim ac lectus. Orci justo vitae eget at diam
-            sed. Odio ut id etiam laoreet porttitor metus, convallis. Quis
-            maecenas cras quis odio risus nibh leo, consequat. Consequat etiam
-            eget ac mauris. Aliquam volutpat in consectetur aliquam enim enim,
-            maecenas felis.
+            {props.location.content}
           </Typography>
         </Grid>
       </Grid>

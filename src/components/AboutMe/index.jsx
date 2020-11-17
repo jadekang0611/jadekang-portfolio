@@ -3,17 +3,7 @@ import { Typography, Grid, Chip } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 // Assets
-import js from './js.png';
-import react from './react.png';
-import mongo from './mongo.png';
-import csharp from './csharp.png';
-import firebase from './firebase.png';
-import ionic from './ionic.png';
-import material from './material.png';
-import node from './node.png';
-import python from './python.png';
-import bootstrap from './bootstrap.png';
-import aboutMeBackground from './aboutMeBackground.svg';
+import AboutMeEdited from './AboutMeEdited.svg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -105,17 +95,17 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const skillSet = [
-  { skill: 'C#', image: `${csharp}` },
-  { skill: 'JavaScript', image: `${js}` },
-  { skill: 'React', image: `${react}` },
-  { skill: 'Node.JS', image: `${node}` },
-  { skill: 'Python', image: `${python}` },
-  { skill: 'MongoDB', image: `${mongo}` },
-  { skill: 'Firebase', image: `${firebase}` },
-  { skill: 'Ionic', image: `${ionic}` },
-  { skill: 'Material-UI', image: `${material}` },
-  { skill: 'Bootstrap', image: `${bootstrap}` },
-  { skill: 'Figma', image: `${bootstrap}` },
+  { skill: 'C#' },
+  { skill: 'JavaScript' },
+  { skill: 'React' },
+  { skill: 'Node.JS' },
+  { skill: 'Python' },
+  { skill: 'MongoDB' },
+  { skill: 'Firebase' },
+  { skill: 'Ionic' },
+  { skill: 'Material-UI' },
+  { skill: 'Bootstrap' },
+  { skill: 'Figma' },
 ];
 
 const AboutMe = () => {
@@ -125,7 +115,7 @@ const AboutMe = () => {
       <Grid container>
         <Grid item xs={12} lg={6} className={classes.profileContainer}>
           <img
-            src={aboutMeBackground}
+            src={AboutMeEdited}
             alt="My Profile-Two"
             className={classes.profile2}
           />
@@ -150,8 +140,8 @@ const AboutMe = () => {
           <Typography variant="body2" className={classes.storyBox}>
             I'm a creative-minded, analytical, and organized software engineer
             with a passion for building software that delivers first-class UI &
-            UX. I have been developing fullstack web and mobile applications for
-            more than 2 years individually as well as within a team.
+            UX. I have been developing fullstack web and mobile applications
+            individually as well as within a team.
           </Typography>
           <Typography variant="body2" className={classes.storyBox}>
             I view myself to be unique and different from most other software

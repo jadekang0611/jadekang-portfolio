@@ -286,6 +286,8 @@ const Projects = () => {
                   released: item.released,
                   github: item.github,
                   deployed: item.deployed,
+                  content: item.content,
+                  role: item.role,
                 }}
                 className={classes.link}
                 onClick={scrollHandler}

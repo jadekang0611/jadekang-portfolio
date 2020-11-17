@@ -4,7 +4,7 @@ import { Typography, Grid } from '@material-ui/core';
 import Ellipse from './Ellipse.svg';
 import Star from './Star.svg';
 import Zigzag from './Zigzag.svg';
-import MainPhoto from './MainPhoto.svg';
+import IntroProfileEdited from './IntroProfileEdited.svg';
 import Scroll from './Scroll.svg';
 
 const useStyles = makeStyles((theme) => ({
@@ -51,19 +51,19 @@ const useStyles = makeStyles((theme) => ({
   },
   profile1: {
     [theme.breakpoints.between('xs', 'sm')]: {
-      width: 292,
+      width: '100%',
       margin: 'auto',
     },
     [theme.breakpoints.between('sm', 'md')]: {
-      width: 477,
+      width: '100%',
       margin: 'auto',
     },
     [theme.breakpoints.between('md', 'lg')]: {
-      width: 477,
+      width: '100%',
       display: 'flex',
     },
     '@media (min-width: 1282px)': {
-      width: 500,
+      width: '100%',
     },
   },
   profile1Box: {
@@ -89,17 +89,20 @@ const Intro = () => {
             </Typography>
           </div>
           <Typography variant="h1" className={classes.text1}>
-            I am an experienced software engineer and business professional
+            I am an experienced full cycle engineer and business professional
           </Typography>
           <Typography variant="body2" className={classes.text2}>
-            Enthusiastic about enterprise efficiency and technology with over 5
-            years of experience analyzing and interpreting large volumes of
-            complex data in Fortune 100 public organizations and building
-            enterprise applications.
+            Coming from management consulting and financial background, I build
+            user-centric applications with business stakeholders' mindset
+            instead of focusing on just the code.
           </Typography>
         </Grid>
         <Grid item xs={12} lg={6} className={classes.profile1Box}>
-          <img src={MainPhoto} alt="Jade Kang" className={classes.profile1} />
+          <img
+            src={IntroProfileEdited}
+            alt="Jade Kang"
+            className={classes.profile1}
+          />
         </Grid>
       </Grid>
     </div>
