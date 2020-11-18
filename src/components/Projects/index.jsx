@@ -2,17 +2,13 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Button, Grid } from '@material-ui/core';
 import { MyData } from '../../data/myData';
-import ProjectImg1 from '../../data/images/project1/project1.png';
-import ProjectImg2 from '../../data/images/project2/project1.png';
-import ProjectImg3 from '../../data/images/project3/project1.png';
-import ProjectImg4 from '../../data/images/project4/project1.png';
-import ProjectImg5 from '../../data/images/project5/project1.png';
+
 import LeftButton from './LeftButton.svg';
 import RightButton from './RightButton.svg';
 
 import BgLeft from './BgLeft.svg';
 import BgRight from './BgRight.svg';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
 
 //Custom Component
@@ -21,14 +17,6 @@ import CustomCard from '../Custom/CustomCard';
 // Multiple Images Slider
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-
-const ProjectImageGroup = [
-  ProjectImg1,
-  ProjectImg2,
-  ProjectImg3,
-  ProjectImg4,
-  ProjectImg5,
-];
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -286,8 +274,8 @@ const Projects = () => {
                   released: item.released,
                   github: item.github,
                   deployed: item.deployed,
-                  content: item.content,
                   role: item.role,
+                  content: item.content,
                 }}
                 className={classes.link}
                 onClick={scrollHandler}

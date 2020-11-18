@@ -7,6 +7,7 @@ import FooterBackground from './FooterBackground.svg';
 import CustomButton from '../Custom/CustomButton';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import AttachmentIcon from '@material-ui/icons/Attachment';
+import MyResume from './JadeKang - Resume.pdf';
 
 const useStyles = makeStyles((theme) => ({
   footer: {
@@ -114,7 +115,7 @@ const ContactContent = () => {
             </a>
           </li>
           <li className={classes.socialIcon}>
-            <a href="/" title="Download Resume">
+            <a href={MyResume} title="Download Resume" download>
               <AttachmentIcon className={classes.resume} />
             </a>
           </li>

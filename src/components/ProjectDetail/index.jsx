@@ -4,9 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Typography, Button } from '@material-ui/core';
 import ArrowBackRoundedIcon from '@material-ui/icons/ArrowBackRounded';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import { MyData } from '../../data/myData';
 import Projects from '../Projects';
-import Thumbnail from './Thumbnail.png';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
 
