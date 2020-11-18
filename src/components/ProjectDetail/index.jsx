@@ -61,6 +61,7 @@ const useStyles = makeStyles((theme) => ({
 
 const ProjectDetail = (props) => {
   const classes = useStyles();
+  document.title = `Jade Kang Portfolio | ${props.location.name}`;
   console.log(props.location);
   return (
     <>

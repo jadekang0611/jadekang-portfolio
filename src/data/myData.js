@@ -28,41 +28,42 @@ export const MyData = {
             startup founder, I tried to build and launch a few platforms in the
             mentoring and networking ecosystem. Without legitimate software
             engineering knowledge and experience, I failed and only burned cash.
-            Upon the completion of the Software Engineering Immersive program,
-            with more than basic knowledge in CS and software engineering, I had
-            a better product idea - building a sass for coding bootcamps where
-            students can practice algorithms, share their learnings and job
-            search journeys with their career advisors and institutions can
+            Upon my completion of a Software Engineering Immersive program, with
+            more than basic knowledge in CS and software engineering, I came up
+            with a better product idea - building a SAAS for coding bootcamps
+            where students can practice algorithms, share their learnings and
+            job search journeys with their career advisors and institutions can
             track students’ performance and effectively get insights in
-            students’ job search process and results in one place.
+            students’ job search process and results in one centralized place.
           </p>{' '}
           <p>
-            Upon gaining some work experience of using react and knowing
+            Upon gaining some work experience using React and having learned
             JavaScript, HTML, CSS, NodeJS, and Firebase from GA, I was finally
             able to develop. As a co-founder and a frontend engineer, I led
             preliminary user research and interviews, gathered business
-            requirements, then turned our initial design to the frontend code.{' '}
-            During the MVP development, I solely contributed to the frontend of
-            the application using React and Bootstrap. Once we decided to
-            rebuild our student-side application frontend with our own custom
-            Robin design and restructure our database and APIs, I transitioned
-            from frontend engineer to fullstack engineer. As a new fullstack
-            engineer, I was responsible for designing our database with Firebase
-            (NoSQL) and building our endpoints in NodeJS using firebase
-            functions for the backend. Additionally, I was a main developer for
-            turning Figma designs to code by designing the frontend UI of the
-            new Robin using React and Material-UI along with
+            requirements, then built the application’s frontend using our
+            initial design. During the MVP development, I solely contributed to
+            the frontend of the application using React and Bootstrap. Once we
+            decided to rebuild our student-side application frontend with our
+            own custom Robin design and restructure our database and APIs, I
+            transitioned from frontend engineer to fullstack engineer. As a new
+            fullstack engineer, I was responsible for designing our database
+            with Firebase (NoSQL) and building our endpoints in NodeJS using
+            firebase functions for the backend. Additionally, I was the main
+            developer for turning Figma designs into code by designing the
+            frontend UI of the new Robin platform using React and Material-UI.
           </p>
           <p>
-            During the MVP development, I was still a very inexperienced one who
-            only had 6 months of frontend work and couldn’t effectively use
-            React, Bootstrap, or NodeJS. Therefore, I experienced a very steep
-            learning curve, especially when building our own IDE to run a user’s
-            code inputs. Within 2 months after the initial Robin application, I
-            was able to build the frontend UI using React more efficiently and
-            build the application highly modular. The real challenges at this
-            time were with authentication of various bootcamp students and
-            securely updating and maintaining their sensitive data.
+            During the MVP development, I was still very inexperienced. I only
+            had 6 months of frontend development experience and couldn’t
+            effectively use React, Bootstrap, or NodeJS. Therefore, I
+            experienced a very steep learning curve, especially when building
+            our own IDE to run a user’s code input. Within 2 months after the
+            initial Robin application release, I was able to build the frontend
+            UI using React more efficiently and refactor the application to be
+            highly modular. The real challenges at this time were with
+            authentication of various bootcamp students and securely updating
+            and maintaining their sensitive data.
           </p>
         </>
       ),
@@ -85,39 +86,40 @@ export const MyData = {
             assignments every week as part of our coding bootcamp program. It
             was apparent that while 60 students were assigned to one single
             career advisor, there was no tool for the advisor to quickly view
-            each student’s career service tasks and additional performance
-            instead of spreadsheets. As soon as we gained enough student users,
-            we reached out to a couple mid-size bootcamps and decided to build a
-            centralized platform for career advisors to monitor students’
-            outcome performance, portfolios, and outcome activities.
+            each student’s career service tasks and additional performance. As
+            soon as we acquired enough student users, we reached out to a couple
+            of mid-sized bootcamps and decided to build a centralized platform
+            for career advisors to monitor students’ outcome performance,
+            portfolios, and outcome activities.
           </p>{' '}
           <p>
-            Upon gaining some work experience of using react and knowing
+            Upon gaining some work experience using React and having learned
             JavaScript, HTML, CSS, NodeJS, and Firebase from GA, I was finally
             able to develop. As a co-founder and a frontend engineer, I led
             preliminary user research and interviews, gathered business
-            requirements, then turned our initial design to the frontend code.{' '}
-            During the MVP development, I solely contributed to the frontend of
-            the application using React and Bootstrap. Once we decided to
-            rebuild our student-side application frontend with our own custom
-            Robin design and restructure our database and APIs, I transitioned
-            from frontend engineer to fullstack engineer. As a new fullstack
-            engineer, I was responsible for designing our database with Firebase
-            (NoSQL) and building our endpoints in NodeJS using firebase
-            functions for the backend. Additionally, I was a main developer for
-            turning Figma designs to code by designing the frontend UI of the
-            new Robin using React and Material-UI along with
+            requirements, then built the application’s frontend using our
+            initial design. During the MVP development, I solely contributed to
+            the frontend of the application using React and Bootstrap. Once we
+            decided to rebuild our student-side application frontend with our
+            own custom Robin design and restructure our database and APIs, I
+            transitioned from frontend engineer to fullstack engineer. As a new
+            fullstack engineer, I was responsible for designing our database
+            with Firebase (NoSQL) and building our endpoints in NodeJS using
+            firebase functions for the backend. Additionally, I was the main
+            developer for turning Figma designs into code by designing the
+            frontend UI of the new Robin platform using React and Material-UI.
           </p>
           <p>
-            During the MVP development, I was still a very inexperienced one who
-            only had 6 months of frontend work and couldn’t effectively use
-            React, Bootstrap, or NodeJS. Therefore, I experienced a very steep
-            learning curve, especially when building our own IDE to run a user’s
-            code inputs. Within 2 months after the initial Robin application, I
-            was able to build the frontend UI using React more efficiently and
-            build the application highly modular. The real challenges at this
-            time were with authentication of various bootcamp students and
-            securely updating and maintaining their sensitive data.
+            During the MVP development, I was still very inexperienced. I only
+            had 6 months of frontend development experience and couldn’t
+            effectively use React, Bootstrap, or NodeJS. Therefore, I
+            experienced a very steep learning curve, especially when building
+            our own IDE to run a user’s code input. Within 2 months after the
+            initial Robin application release, I was able to build the frontend
+            UI using React more efficiently and refactor the application to be
+            highly modular. The real challenges at this time were with
+            authentication of various bootcamp students and securely updating
+            and maintaining their sensitive data.
           </p>
         </>
       ),
@@ -136,44 +138,45 @@ export const MyData = {
         <>
           <p>
             After we released our first Robin Application in late March 2020, we
-            experienced a fast growth in the bootcamp community. Students in
+            experienced fast growth in the bootcamp community. Students in
             various coding bootcamps such as General Assembly, LearningFuze,
-            Redwoods Academy, Springboard, HackReactor, AppAcademy discovered
+            Redwood Academy, Springboard, HackReactor, and AppAcademy discovered
             our application and used it daily to practice algorithms and
             computer science. As we were getting 20 new signups every day
-            without any marketing, we started to see an increased number of
-            general questions about the application and requests for specific
-            needs for some bootcamps. Up until this point, we could easily
-            address questions and didn’t pay much attention to communicating
-            with users. Starting in June, my cofounder and I were invited to
-            speak at many startup events and AMAs, then we realized that it
-            would have been better if we could make our product information and
-            our vision more accessible to the public with our brand identity.
-            That’s how we gathered business requirements and started to work
-            with our UI designer for our website.
+            without engaging in any marketing, we started to see an increased
+            number of general questions about the application and requests for
+            specific needs for some bootcamps. Up until this point, we could
+            easily address questions and didn’t pay much attention to
+            communicating with users. Starting in June, my cofounder and I were
+            invited to speak at many startup events and AMAs. Then, we realized
+            that it would have been better if we could make our product
+            information and our vision more accessible to the public with our
+            brand identity. That’s when we gathered more business requirements
+            and started to work with our UI designer for our public website.
           </p>
           <p>
             Before our big AMA event at CareerKarma in July, we had to build and
-            deploy our website in 2 weeks. Therefore, we had to properly
+            deploy our website within 2 weeks. Therefore, we had to properly
             allocate our tasks among 3 developers and decide which css framework
-            to use and overall structure of the frontend with react. I
-            configured our github repository, branches, and set up our local
-            environment. Based on the design and team discussion, I discovered
-            three pages to have consistent layout with a few differences, thus I
-            initiated the frontend work with more modular component styles. I
-            built the site using react and bootstrap for our frontend. As our
-            senior developer was spending her majority of time on the next
-            version of our enterprise application, I performed code review,
-            tested the sites, and passed or failed the code based on acceptance
-            criteria.
+            to use and architect the overall structure of the frontend with
+            React. I configured our github repository, branches, and set up our
+            local environment. Based on the design and team discussion, I
+            discovered three pages that had a consistent layout with a few small
+            differences and thus, I built the frontend with more modular
+            components and styles. I built the site using React and Bootstrap
+            for our frontend. As our senior developer was spending the majority
+            of her time on the next version of our enterprise application, I
+            performed all code reviews, tested the site, and passed or failed
+            the code based on acceptance criteria.
           </p>
           <p>
-            Having time constraint and no responsive designs, we had to quickly
-            but accurately guess and target each media query for the
-            responsiveness of the site based on the original Figma design. To
-            reduce duplicate styles for the list of media queries and
-            efficiently run the development, I suggested and implemented one
-            central location that holds specific styles for all media queries.
+            Having a time constraint and no responsive designs for tablet or
+            mobile screens, we had to quickly but accurately guess and target
+            each media query for the responsiveness of the site to be seamless
+            based on the original Figma design. To reduce duplicate styles for
+            the list of media queries and to ensure efficient development, I
+            suggested and implemented one centralized location that holds
+            specific styles for all media queries.
           </p>
         </>
       ),
@@ -191,36 +194,38 @@ export const MyData = {
       content: (
         <>
           <p>
-            Due to the unchanging severity of the COVID-19, Korean government
+            Due to the unchanging severity of COVID-19, the Korean government
             requires every business to take visitors' or customers' personal
             information and temperatures and maintain all records. Many
             businesses have devices to capture a customer's QR code to get their
-            personal information from their phones via Kakao or Naver; however,
+            personal information from their phones via Kakao or Naver. However,
             small private businesses can't afford such a device. Therefore,
-            people at many places take each visitor's temperature, manually
-            track their personal information and temperatures on papers
-            everyday. Furthermore, they often use the same paper that has
-            previous information of many visitors over two or three days, each
-            person's personal information is accessible to anyone. Upon my user
-            research and interviews, I discovered that manual entries of each
-            visitor's temperature takes time and gets lost though government
-            officials often request small businesses to send them a compiled
-            report that shows all entries over a certain period.{' '}
+            people at many places take each visitor's temperature and manually
+            track their personal information and temperatures on paper everyday.
+            Furthermore, they often use the same paper that has the previous
+            information of many visitors over two or three days already logged.
+            Each person's personal information is accessible to anyone walking
+            by. Upon performing user research and interviews, I discovered that
+            the manual entries of each visitor's temperature takes time, are
+            often illegible, and get lost, even though government officials
+            often request small businesses to send them a compiled report that
+            shows all entries over a certain period.
           </p>
           <p>
             As soon as I gathered business requirements, I designed a simple
-            user flow, and structured my data models including user model, log
-            model, and customer model which were ultimately designed in my
+            user flow and structured my data models including the user model,
+            log model, and customer model which were ultimately designed in
             NodeJS, Mongoose, and MongoDB. To practice and improve my skills in
             MongoDB and NodeJS, I built my REST API using NodeJS, MongoDB,
-            Mongoose, and Express instead of Firebase. I tested and validated
-            each endpoint using Postman. I also enhanced security and
+            Mongoose, and Express instead of with Firebase. I tested and
+            validated each endpoint using Postman. I also enhanced security and
             authentication of the application by implementing custom user input
             validation using Joi, bcrypt, and JWT. Upon the completion of the
             backend, I built the frontend with React and Material-UI and used
-            Axios to fetch data from the api. Lastly, I built a PDF report file
-            generator feature using jsPDF that lets a user generate a searched
-            temperature log result in PDF on the client-side.{' '}
+            Axios to fetch data from the API. Lastly, I built a PDF report file
+            generator feature using jsPDF that lets a user generate a
+            temperature log based on search criteria that gets returned in PDF
+            format on the client-side.
           </p>
           <p>
             From building this application to deploying it live, I’ve
@@ -228,13 +233,13 @@ export const MyData = {
             (2) working with MongoDB. Firstly, enabling the HTML5 client-side
             solution for PDF generation using jsPDF with React in Korean was
             very challenging mostly due to lack of documentation and outdated
-            solutions all over the Internet. Another one is that after I built
-            my major applications’ apis with Firebase functions most of my time,
-            my knowledge in MongoDB and NodeJS was disappearing. To turn it into
-            an opportunity, I reviewed MongoDB documentation, practiced querying
-            and somewhat slowly, but accurately built my backend following the
-            MVC structure. This was quite a challenging project but at the end
-            it turned out to be one of the most rewarding projects that I have
+            solutions all over the internet. Another one is that being more
+            familiar with APIs built using Firebase functions, my knowledge in
+            MongoDB and NodeJS was disappearing. To turn it into an opportunity,
+            I reviewed the MongoDB documentation, practiced querying, and
+            somewhat slowly, but accurately, built my backend following the MVC
+            structure. This was quite a challenging project but at the end it
+            turned out to be one of the most rewarding projects that I have ever
             completed.
           </p>
         </>
@@ -253,28 +258,28 @@ export const MyData = {
       content: (
         <>
           <p>
-            Initially, I didn’t plan to have a full website for Tempture
+            Initially, I didn’t plan to create a full website for the Tempture
             application. However, once I released the MVP version to a couple of
-            eSmart Habeob Learning centers in Seoul, I was reached out by some
-            more small bakery and cafe owners that own major brands - Tous Le
-            Jours and Pascucci in Gangnam, Seoul. To provide a better user
+            eSmart Haebeob Learning centers in Seoul, I was contacted by some
+            small bakery and cafe owners that own major brands - Tous Le Jours
+            and Pascucci - in Gangnam, Seoul. To provide a better user
             experience and share more useful information, I decided to design
             and build the main Tempture website where people can learn about the
             application, COVID19 status, and also simply download custom
-            designed posters for free to increase the safety during this
+            designed posters for free to increase public safety during this
             unprecedented time.
           </p>
           <p>
             Because I wanted the development of the website to take less than 3
-            days without unnecessary road blocks, I decided to use React and
-            Material UI for my frontend and deployed it to heroku. I used Canva
+            days without any unnecessary road blocks, I decided to use React and
+            Material UI for my frontend and deployed it to Heroku. I used Canva
             to design my custom posters.
           </p>
           <p>
             Despite the fact that I did not have a UI design for the project,
-            using Material-UI and concepts, I believe that I picked appropriate
-            colors and designed the site to be user friendly spending no more
-            than 15 hours on this project.
+            using Material-UI and design concepts, I believe that I picked
+            appropriate colors and designed the site to be user friendly,
+            spending no more than 15 hours on this project.
           </p>
         </>
       ),

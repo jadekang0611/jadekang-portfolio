@@ -92,8 +92,8 @@ const Intro = () => {
             I am an experienced full cycle engineer and business professional
           </Typography>
           <Typography variant="body2" className={classes.text2}>
-            Coming from management consulting and financial background, I build
-            user-centric applications with business stakeholders' mindset
+            Coming from a management consulting and financial background, I
+            build user-centric applications with business stakeholders' mindset
             instead of focusing on just the code.
           </Typography>
         </Grid>
