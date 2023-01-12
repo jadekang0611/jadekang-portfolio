@@ -1,14 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { ThemeProvider } from '@material-ui/styles';
-import Navigation from './components/Navigation';
-import Intro from './components/Intro';
-import AboutMe from './components/AboutMe';
-import Projects from './components/Projects';
-import ProjectDetail from './components/ProjectDetail';
-import Footer from './components/Footer';
-import theme from './theme';
-import * as ROUTES from './constants/routes';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { ThemeProvider } from "@material-ui/styles";
+import Navigation from "./components/Navigation";
+import Intro from "./components/Intro";
+import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
+import ProjectDetail from "./components/ProjectDetail";
+import Footer from "./components/Footer";
+import theme from "./theme";
+import * as ROUTES from "./constants/routes";
 
 function App() {
   return (

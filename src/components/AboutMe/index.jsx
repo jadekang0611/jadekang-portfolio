@@ -1,64 +1,64 @@
-import React from 'react';
-import { Typography, Grid, Chip } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import React from "react";
+import { Typography, Grid, Chip } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
 // Assets
-import AboutMeEdited from './AboutMeEdited.svg';
+import AboutMeEdited from "./AboutMeEdited.svg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: theme.spacing(17, 15, 6, 15),
-    [theme.breakpoints.between('xs', 'sm')]: {
+    [theme.breakpoints.between("xs", "sm")]: {
       padding: theme.spacing(3, 2),
     },
   },
 
   profile2: {
-    [theme.breakpoints.between('sm', 'md')]: {
+    [theme.breakpoints.between("sm", "md")]: {
       width: 651,
     },
-    [theme.breakpoints.between('md', 'lg')]: {
+    [theme.breakpoints.between("md", "lg")]: {
       width: 600,
-      display: 'flex',
-      margin: 'auto',
+      display: "flex",
+      margin: "auto",
     },
-    '@media (min-width: 0px) and (max-width:1279px)': {
-      width: '100%',
-      display: 'none',
+    "@media (min-width: 0px) and (max-width:1279px)": {
+      width: "100%",
+      display: "none",
     },
-    '@media (min-width: 1282px)': {
+    "@media (min-width: 1282px)": {
       width: 651,
     },
   },
 
   titleBox: {
-    display: 'flex',
-    alignItems: 'center',
+    display: "flex",
+    alignItems: "center",
   },
 
   rectangle: {
     width: 78,
     height: 2,
     background: theme.palette.primary.main,
-    marginRight: '14px',
+    marginRight: "14px",
   },
   storyBox: {
     margin: theme.spacing(2.5, 0),
     color: theme.palette.content,
   },
   wrapper: {
-    position: 'relative',
+    position: "relative",
   },
   rectangle6: {
     width: 478,
     height: 16,
     background: theme.palette.secondary.light,
-    position: 'absolute',
+    position: "absolute",
     left: 0,
     right: 0,
-    top: '0.85em',
-    zIndex: '-1',
-    '@media (min-width: 0px) and (max-width:599px)': {
+    top: "0.85em",
+    zIndex: "-1",
+    "@media (min-width: 0px) and (max-width:599px)": {
       width: 299,
     },
   },
@@ -66,46 +66,46 @@ const useStyles = makeStyles((theme) => ({
     width: 142,
     height: 16,
     background: theme.palette.secondary.light,
-    position: 'absolute',
+    position: "absolute",
     left: 0,
     right: 0,
-    top: '0.85em',
-    zIndex: '-1',
-    '@media (min-width: 0px) and (max-width:599px)': {
+    top: "0.85em",
+    zIndex: "-1",
+    "@media (min-width: 0px) and (max-width:599px)": {
       width: 90,
     },
   },
   chip: {
-    margin: '16px 8px -4px 0',
-    boxShadow: '0px 4px 8px rgba(75, 68, 184, 0.24)',
-    borderRadius: '30px',
-    padding: '8px 16px',
-    fontSize: '16px',
+    margin: "16px 8px -4px 0",
+    boxShadow: "0px 4px 8px rgba(75, 68, 184, 0.24)",
+    borderRadius: "30px",
+    padding: "8px 16px",
+    fontSize: "16px",
     fontWeight: 500,
-    lineHeight: '24px',
+    lineHeight: "24px",
   },
   profileContainer: {
-    display: 'flex',
-    justifyContent: 'flex-start',
-    '@media (min-width: 1280px) and (max-width:1500px)': {
-      display: 'flex',
-      justifyContent: 'flex-end',
+    display: "flex",
+    justifyContent: "flex-start",
+    "@media (min-width: 1280px) and (max-width:1500px)": {
+      display: "flex",
+      justifyContent: "flex-end",
     },
   },
 }));
 
 const skillSet = [
-  { skill: 'C#' },
-  { skill: 'JavaScript' },
-  { skill: 'React' },
-  { skill: 'Node.JS' },
-  { skill: 'Python' },
-  { skill: 'MongoDB' },
-  { skill: 'Firebase' },
-  { skill: 'Ionic' },
-  { skill: 'Material-UI' },
-  { skill: 'Bootstrap' },
-  { skill: 'Figma' },
+  { skill: "JavaScript" },
+  { skill: "React" },
+  { skill: "Node.JS" },
+  { skill: "Python" },
+  { skill: "Firebase" },
+  { skill: "Material-UI" },
+  { skill: "Bootstrap" },
+  { skill: "Figma" },
+  { skill: "Deep Learning" },
+  { skill: "Fast.ai" },
+  { skill: "Pytorch" },
 ];
 
 const AboutMe = () => {
